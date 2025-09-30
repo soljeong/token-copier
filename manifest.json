@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Token Copier",
+  "version": "1.0",
+  "description": "네트워크 요청의 Authorization 토큰을 캡처해서 복사해주는 도구",
+  "permissions": [
+    "storage",
+    "webRequest",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
+
